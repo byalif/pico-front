@@ -2,9 +2,6 @@ sudo: required
 services:
   - docker
 
-env:
-  - REACT_APP_API_URL=https://pico-gram.herokuapp.com
-
 before_install:
   - docker build -t byalif/pico-front -f DockerFile.dev .
 
