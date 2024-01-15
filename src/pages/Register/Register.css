@@ -1,0 +1,157 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.Register{
+    /* margin-top: -120px; */
+    width: 100%;
+    height: 550px;
+
+    display: flex;
+font-family: 'Trebuchet MS',
+'Lucida Sans Unicode',
+'Lucida Grande',
+'Lucida Sans',
+Arial,
+sans-serif;
+
+
+}
+
+
+
+/* .inputs p{
+    display: none;
+} */
+
+.error {
+    padding-left: 12px;
+    display: none;
+    color: #a52a2a;
+}
+
+.success{
+    padding-left: 12px;
+    display: none;
+    color: green;
+}
+
+.icon {
+    z-index: 10;
+    /* display: none; */
+    color: green;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -32px;
+}
+.iconE {
+    z-index: 10;
+    /* display: none; */
+    color: rgb(167, 31, 31);
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -33px;
+}
+.iconD {
+    z-index: 10;
+    /* display: none; */
+    color: rgb(167, 31, 31);
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -83px;
+}
+button{
+ cursor: pointer;
+}
+
+
+.page{
+
+    display: flex;
+    margin: auto;
+
+}
+
+.RegisterForm{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* height: 500px; */
+    background-color: rgb(245, 245, 245);
+    box-shadow: 2px 2px 20px rgb(175, 174, 174);
+}
+
+.RegisterForm input{
+    border-radius: 4px;
+    border:.5px solid;
+            width: 250px;
+    padding: 8px 8px;
+        display: block;
+        margin: 8px;
+
+}
+
+.leftside{
+    padding-right: 50px;
+   margin: auto 0;
+   margin-left: 5px;
+   
+    max-width: 300px;
+}
+
+.RegisterForm label{
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.Register .inputs{
+    align-items: center;
+}
+
+.btn{
+  text-align: center;
+}
+.btn h4{
+
+    margin-left: 5px;
+    font-weight: lighter;
+    font-size: small;
+    text-align: center;
+    max-width:270px;
+}
+.btn span{
+    color: rgb(119, 148, 207);
+}
+.btn span:hover{
+    cursor: pointer;
+}
+.btn button {
+    margin-top: 10px;
+    width: 94%;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgb(90, 144, 232)
+}
+
+.leftside span{
+    color: rgb(74, 94, 125);
+}
+
+.leftside li{
+    list-style-type: none;
+}
+
+@media (max-width: 580px){
+    .Register{
+        
+    }
+    .leftside{
+        display: none;
+    }
+}

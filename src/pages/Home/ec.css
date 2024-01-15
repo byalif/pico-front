@@ -1,0 +1,10 @@
+.ec-container{
+position: absolute;
+height: 100px;
+width: 200px;
+margin-left: -130px;
+
+overflow: hidden;
+background-color: blue;
+
+}

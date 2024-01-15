@@ -1,0 +1,288 @@
+
+.homee {
+    padding-top: 50px;
+    /* height: 750px; */
+    padding-bottom: 30px;
+margin: 0 auto;
+min-width: 80%;
+flex-shrink: 0;
+display: flex;
+    min-width: 0;
+
+
+}
+
+
+
+
+
+.snd {
+
+    color: rgb(62, 82, 110);
+    /* position: relative;
+    display: flex; */
+    /* justify-content: right; */
+    /* top: 35px;
+    left: 552px; */
+    font-family: 'Courier New', Courier, monospace;
+    padding: 8px 2px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    top: 100px;
+    border: none;
+    background-color: transparent;
+    z-index: 180;
+    font-weight: bold;
+    font-size: 15px;
+
+
+}
+
+.homee .post{
+    
+    margin: 0 auto;
+    overflow: visible;
+    max-width: 600px;
+    /* border: 1px solid black; */
+    display: flex;
+    margin-bottom: -30px;
+ box-shadow: 2px 2px 10px rgb(162, 162, 162);
+    flex-direction: column;
+}
+
+.homee .post .image{
+    
+    flex: 70%;
+    margin-bottom: 7px;
+
+}
+
+.homee .post .content {
+    /* min-width: 0; */
+    flex: 30%;
+        overflow: visible;
+
+}
+
+.col {
+    /* z-index: 100; */
+    background-color: rgb(244, 244, 244);
+}
+
+.homee .post .image .img{
+    width: 100%;
+    
+    height: 82%;
+
+}
+
+.username {
+    font-weight:400;
+    cursor: pointer;
+    color: rgb(88, 157, 170);
+}
+
+.input {
+    margin-top: -28px;
+}
+
+.homee .content{
+    
+    margin-top: -120px;
+    text-align: center;
+}
+
+.homee .desc{
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+.trash{
+
+cursor: pointer;
+    font-size: 19px;
+}
+
+.homee .header{
+    margin-top: 3px;
+    margin-bottom: 5px;
+    min-height: 72px;
+    display: flex;
+    justify-content: space-between;
+    padding:2px 18px ;
+    align-items: center;
+}
+.comd{
+    text-align: left;
+    padding-left: 18px;
+    padding-top: 12px;
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.oka{
+
+    
+}
+
+
+.input{
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 540px;
+    background-color: transparent;
+}
+.rightside{
+    align-items: center;
+}
+
+.rightside .heart{
+    cursor: pointer;
+    padding-right: 12px;
+    font-size: 20px;
+}
+
+.likes{
+    text-align: left;
+    padding-left: 18px;
+    color: rgb(21, 47, 74);
+}
+
+.col {
+    z-index: -6;
+    background-color: rgb(244, 244, 244);
+}
+
+button{
+    padding: 20px;
+}
+
+.btnd {
+    color: rgb(62, 82, 110);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 8px 2px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    top: 101px;
+  
+    margin-right: -12px;
+    border: none;
+
+    z-index: 200;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: transparent;
+    /* background-color: aqua; */
+    padding: 10px;
+    padding-top: 14px;
+    padding-right: 15px;
+    margin-bottom: -5px;
+}
+
+.explore{
+    /* font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: -20px; */
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    color: rgb(33, 34, 38);
+    font-family: 'Helvetica Neue',
+    sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-top: 15px;
+    margin-bottom: -15px;
+    text-align: center;
+}
+
+.btndc {
+    color: rgb(165, 177, 195);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 8px 2px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    top: 102px;
+    margin-left: 9px;
+    margin-right: -14px;
+    border: none;
+
+    z-index: 200;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: transparent;
+    /* background-color: aqua; */
+    padding: 10px;
+    padding-top: 14px;
+    padding-right: 15px;
+    margin-bottom: -5px;
+}
+
+.profile{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(223, 223, 223);
+}
+.profile button{
+   border: none;
+   height: 46px;
+   
+
+}
+.circle{
+
+    padding: 10px 14px;
+    margin: 4px;
+    margin-left: 6px;
+    border-radius: 100px;
+    background-color: rgb(196, 207, 217);
+        box-shadow: .5px .5px rgb(0, 0, 0);
+}
+.profile button{
+    border: .9px solid;
+    margin: 7px;
+    padding: 0 15px;
+    height: 35px;
+    background-color: rgb(233, 233, 233);
+        /* box-shadow: 0 0 .5px 0 rgb(0, 0, 0); */
+}
+
+
+
+
+.profile .leftside {
+    
+
+    display: flex;
+    align-items: center;
+}
+.btns {
+    color: rgb(174, 195, 223);
+    position: relative;
+    display: flex;
+
+    top: 25px;
+    left: 552px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px 2px;
+    cursor: pointer;
+    width: 50px;
+    margin-left:-9px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: transparent;
+
+}

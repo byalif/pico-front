@@ -1,0 +1,76 @@
+.ol{
+    
+        padding-bottom: 100px;
+}
+.container{
+    
+    position: relative;
+    z-index: 1000;
+    overflow-x: hidden;
+
+        max-width: 2000px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+}
+.color{
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+        /* overflow-x: hidden; */
+    background-color: rgb(58, 60, 93);
+    
+}
+.Navbar{
+
+width: 100%;
+/* overflow-x: hidden; */
+z-index: 1000;
+position: relative;
+
+display: flex;
+
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+height: 60px;
+
+}
+
+.Navbar a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 20px;
+    color: rgb(222, 222, 222);
+    font-size: 17px;
+    height:20px;
+    margin: 0 5px;
+    /* background-color: aliceblue; */
+    padding: 4px 10px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    background: transparent;
+
+}
+
+.Navbar a:hover {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        background: rgb(72, 74, 109);
+    /* border: 2px solid #000000; */
+}
+
+.Navbar .picked {
+    padding-top: 6px;
+        padding-bottom: 6px;
+        background: rgb(72, 74, 109);
+}
+
+
+
+.Navbar .left{
+margin: 0 12px;
+}
+.Navbar .right {
+    margin: 0 12px;
+}
+

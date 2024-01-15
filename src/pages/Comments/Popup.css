@@ -1,0 +1,73 @@
+
+.popup  {
+        overflow-y:scroll;
+        z-index: 1000;
+    position: fixed;
+    left: 50%;
+
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.popup .popup-inner{
+
+    overflow: scroll;
+    height: 300px;
+    border-radius: 5px;
+    width: 300px;
+    background-color: rgb(238, 238, 238);
+}
+
+.bg{
+        
+    position: fixed; 
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 30%;
+        background-color: rgb(0, 0, 0);
+}
+
+.opened h2{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+        font-weight:lighter;
+       
+}
+
+.popup .close{
+    text-align: right;
+    font-size: 20px;
+    padding: 6px 10px;
+
+}
+
+.popup .like{
+    align-items: center;
+    display: flex;
+    box-shadow: 1px 1px rgb(115, 115, 115);
+    
+    margin:-7px 0;
+}
+
+.popup .title{
+    text-align: center;
+        box-shadow: 1px 1px rgb(115, 115, 115);
+        padding-bottom: 16px;
+}
+
+.popup .circle{
+    cursor: pointer;
+    width: 8px;
+    height: 17px;
+    background-color: rgb(213, 213, 213);
+    box-shadow: 2px 2px 1px rgb(115, 115, 115);
+    padding: 2px 6px;
+
+    margin: 0 8px;
+    border-radius: 100px;
+}
