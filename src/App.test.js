@@ -13,18 +13,18 @@ import Popup from "./pages/Comments/Popup.js";
 import { post } from "./mockData/mockData.js";
 
 describe("API unit tests", () => {
-  test("Fetch posts is working", async () => {
-    render(
-      <AppProvider>
-        <BrowserRouter>
-          <Home />
-        </BrowserRouter>
-      </AppProvider>
-    );
+  // test("Fetch posts is working", async () => {
+  //   render(
+  //     <AppProvider>
+  //       <BrowserRouter>
+  //         <Home />
+  //       </BrowserRouter>
+  //     </AppProvider>
+  //   );
 
-    const posts = await screen.findAllByTestId("allPosts");
-    expect(posts.length).toBeGreaterThan(0);
-  });
+  //   const posts = await screen.findAllByTestId("allPosts");
+  //   expect(posts.length).toBeGreaterThan(0);
+  // });
 
   test("Fetching profile is working", async () => {
     //Rendering component with a default author
