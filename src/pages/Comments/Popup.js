@@ -24,7 +24,7 @@ const Popup = ({ setTrigger, posts, trigger }) => {
           <div className="opened">
             {posts.likes.map((x) => {
               return (
-                <div className="like">
+                <div data-testid="allLikes" className="like">
                   <div
                     onClick={() => {
                       nav(`/${x.email}`);

@@ -238,7 +238,9 @@ const Profile = () => {
                   className="person"
                 >
                   <div className="circleto">
-                    <h4>{theAuthor.email[0].toUpperCase()}</h4>
+                    <h4 data-testid="author">
+                      {theAuthor.email[0].toUpperCase()}
+                    </h4>
                   </div>
                   <div className="whole">
                     <div className="rs">
@@ -299,7 +301,9 @@ const Profile = () => {
                 className="person"
               >
                 <div className="circletop">
-                  <h4>{post[0].user.email[0].toUpperCase()}</h4>
+                  <h4 data-testid="author">
+                    {post[0].user.email[0].toUpperCase()}
+                  </h4>
                 </div>
                 <div className="whole">
                   <div className="rs">

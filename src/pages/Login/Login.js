@@ -21,7 +21,7 @@ const Login = () => {
 
   useEffect(() => {
     setIndex(1);
-  });
+  }, []);
   const login = () => {
     fetch(`${process.env.REACT_APP_API_URL}/login`, {
       body: JSON.stringify(user),

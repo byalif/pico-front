@@ -16,7 +16,6 @@ import Comments from "../Comments/Comments";
 // import "./Home.css";
 
 const Home = () => {
-  const { you, setYou } = useGlobalContext();
   const nav = useNavigate();
   const [newComment, setComment] = useState({
     comment: [],
@@ -25,7 +24,7 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isComLoading, setIsComLoading] = useState(true);
   const [isLikeLoading, setIsLikeLoading] = useState(true);
-  const { setIndex, loggedIn, setLoggedIn } = useGlobalContext();
+  const { you, setYou, setIndex, loggedIn, setLoggedIn } = useGlobalContext();
   const [user, setUser] = useState([]);
   let thisone = false;
   const [post, setPost] = useState([]);
@@ -37,11 +36,11 @@ const Home = () => {
   let temped2 = [];
 
   useEffect(() => {
-    setYou(localStorage.getItem("username"));
     setIsLikeLoading(true);
     if (localStorage.getItem("loggedIn")) {
       fetchImages();
       setLoggedIn(true);
+      setYou(localStorage.getItem("username"));
       setUser(localStorage.getItem("username"));
     } else {
       localStorage.setItem("loggedIn", false);
@@ -66,7 +65,6 @@ const Home = () => {
         return res.json();
       })
       .then((res) => {
-        console.log(res);
         setPost(res.reverse());
         temped = [];
         temped2 = [];
@@ -237,7 +235,7 @@ const Home = () => {
           {post.map((x) => {
             let myImage = cld.image(`${x.image}`);
             return (
-              <div>
+              <div key={x.id} data-testid="allPosts">
                 <div className="homee">
                   <div style={{ marginTop: "10px" }} className="post">
                     <div className="profile">

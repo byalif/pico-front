@@ -6,4 +6,4 @@ before_install:
   - docker build -t byalif/pico-front -f DockerFile.dev .
 
 script:
-  - docker run byalif/pico-front npm run test -- --coverage
+  - docker run -e CI=true byalif/pico-front npm run test -- --coverage
