@@ -11,10 +11,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
-  app: "picoapp"
-  env: "Picoapp-env"
+  app: "pico"
+  env: "Pico-env"
   bucket_name: "elasticbeanstalk-us-east-2-246211615161"
-  bucket_path: "picoapp"
+  bucket_path: "pico"
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
