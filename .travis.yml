@@ -7,3 +7,16 @@ before_install:
 
 script:
   - docker run -e CI=true byalif/pico-front npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "picogram"
+  env: "Picogram-env-2"
+  bucket_name: "elasticbeanstalk-us-east-2-246211615161"
+  bucket_path: "picogram"
+  on: 
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: 
+    secure: $AWS_SECRET_KEY
