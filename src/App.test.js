@@ -21,47 +21,46 @@ describe("API unit tests", () => {
   //       </BrowserRouter>
   //     </AppProvider>
   //   );
-
   //   const posts = await screen.findAllByTestId("allPosts");
   //   expect(posts.length).toBeGreaterThan(0);
   // });
-
   test("Fetching profile is working", async () => {
     //Rendering component with a default author
-    // render(
-    //   <AppProvider>
-    //     <Router initialEntries={["/alifrahi22@gmail.com"]}>
-    //       <Routes>
-    //         <Route path="/:email" element={<Profile />} />
-    //       </Routes>
-    //     </Router>
-    //   </AppProvider>
-    // );
-    // const defaultAuthor = await screen.findAllByText("A")[0];
-    // const author = await screen.findAllByTestId("author")[0];
-    // expect(defaultAuthor).toBe(author);
+    render(
+      <AppProvider>
+        <Router initialEntries={["/alifrahi22@gmail.com"]}>
+          <Routes>
+            <Route path="/:email" element={<Profile />} />
+          </Routes>
+        </Router>
+      </AppProvider>
+    );
+    const defaultAuthor = await screen.findAllByText("A")[0];
+    const author = await screen.findAllByTestId("author")[0];
+    expect(defaultAuthor).toBe(author);
   });
 });
 
 describe("Component unit tests", () => {
   test("Elipsis componenet triggers", () => {
-    //   render(
-    //     <AppProvider>
-    //       <Elipsis trigger={true} />
-    //     </AppProvider>
-    //   );
-    //   const elements = screen.getAllByRole("heading", { level: 4 });
-    //   expect(elements.length).toBe(2);
-    // });
-    // test("Popup componenet triggers", () => {
-    //   render(
-    //     <AppProvider>
-    //       <BrowserRouter>
-    //         <Popup trigger={true} posts={post} />
-    //       </BrowserRouter>
-    //     </AppProvider>
-    //   );
-    //   const likes = screen.getAllByTestId("allLikes");
-    //   expect(likes.length).toBe(3);
+    render(
+      <AppProvider>
+        <Elipsis trigger={true} />
+      </AppProvider>
+    );
+    const elements = screen.getAllByRole("heading", { level: 4 });
+    expect(elements.length).toBe(2);
+  });
+
+  test("Popup componenet triggers", () => {
+    render(
+      <AppProvider>
+        <BrowserRouter>
+          <Popup trigger={true} posts={post} />
+        </BrowserRouter>
+      </AppProvider>
+    );
+    const likes = screen.getAllByTestId("allLikes");
+    expect(likes.length).toBe(3);
   });
 });
